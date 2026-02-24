@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------
+BITACORA DE LA TAREA 2: PILA DINAMICA GENERICA
+Integrantes: Santiago Payan Ibarra y Jose Maria Nuñez Saille
+--------------------------------------------------------------------------------
+
+DIA 1: 20/02/2026 (2 horas) - Planeacion y el cascaron del codigo
+Actividad: Leer bien las instrucciones y armar la estructura inicial.
+
+- Aportacion Santiago: Checar exactamente que pedia la rubrica sobre el arreglo dinámico y armar los atributos privados de la clase (la capacidad, el tope y el puntero).
+- Aportacion Jose Maria: Investigar bien como hacer la separacion de archivos en C++ (.hpp y .tpp) usando plantillas para que el compilador no nos marcara error, y escribir las firmas de las funciones.
+- Avance: Dejamos lista la estructura base en el archivo Pila.hpp y entendimos como iba a funcionar la memoria dinamica de nuestro proyecto.
+
+
+DIA 2: 21/02/2026 (3 horas) - Constructores y manejo de memoria
+Actividad: Echar a andar los "4 grandes" de C++ y los metodos basicos.
+
+- Aportacion Santiago: Hacer el constructor por defecto, el destructor (para que no quede memoria colgada) y programar las funciones sencillas como isEmpty(), size() y clear().
+- Aportacion Jose Maria: Romperse la cabeza un rato con el constructor de copias y el operador de asignacion (operator=) para asegurar que se hiciera una "copia profunda" y no se nos cruzaran las memorias de dos pilas distintas.
+- Avance: El manejo de memoria quedo al cien, ya podemos crear y destruir pilas sin que haya fugas de memoria.
+
+
+DIA 3: 23/02/2026 (3 horas) - La logica pesada y tipos personalizados
+Actividad: Hacer que la pila realmente apile, desapile y crezca sola.
+
+- Aportacion Santiago: Armar el metodo privado "redimensionar" para que el arreglo crezca al doble cuando se llene, y programar el metodo push() incluyendo esa validacion.
+- Aportacion Jose Maria: Escribir el pop() y el getTop(), poniendole validaciones (throw) para que el programa no truene feo si intentamos sacar algo de una pila vacia. Tambien crear la clase "Complejo" para cumplir el requisito del dato personalizado.
+- Avance: La logica central ya funciona perfecto. La pila mete y saca datos, y comprobamos que si se llena, duplica su tamano sin perder informacion.
+
+
+DIA 4: 24/02/2026 (2 horas) - Menu, pruebas en terminal y documentacion
+Actividad: Integrar todo en el main, probar en Linux y dejarlo presentable.
+
+- Aportacion Santiago: Programar el menu interactivo en el main.cpp usando un template para poder probar todos los recursos facilmente. Despues, hacer las pruebas de compilacion directo en la terminal de Ubuntu.
+- Aportacion Jose Maria: Escribir el archivo README.md explicando como compilar y meterle los comentarios de documentacion al codigo para que se vea profesional.
+- Avance: Proyecto completamente terminado y probado. Todo compila sin errores de enlazador y los 3 tipos de datos exigidos pasaron la prueba.
+--------------------------------------------------------------------------------
